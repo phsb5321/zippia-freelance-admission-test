@@ -1,0 +1,53 @@
+.container {
+    width: 80vw;
+    height: auto;
+    background: var(--white);
+    margin: 1rem auto;
+
+    padding: 1rem;
+
+    border: 1px solid #d8dee2;
+    box-sizing: border-box;
+    box-shadow: 0px 22px 23px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "logo logo description description description"
+        "logo logo description description description";
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.title_and_date {
+    grid-area: title_and_date;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.description {
+    grid-area: description;
+}

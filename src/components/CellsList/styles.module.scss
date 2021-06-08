@@ -1,0 +1,15 @@
+.mainWrapper {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1rem auto 5rem auto;
+}
+
+.loading {
+    margin: auto;
+}
+
+.paginationWrapper {
+    max-width: fit-content;
+}
